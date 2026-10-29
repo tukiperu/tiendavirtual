@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07999d" />
+  <meta name="description" content="TUKI: productos para mascotas, servicios de lavandería y mucho más. Descubre nuestras novedades y pide por WhatsApp." />
+  <title>TUKI | Para los que más quieres</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css?v=1.0.0" />
+</head>
+<body>
+  <div class="topbar"><span>💛 TUKI: cuidamos de lo que más quieres</span><span class="topbar-secondary">Productos y servicios para toda la familia</span></div>
+  <header class="header" id="inicio">
+    <div class="header-main container">
+      <a class="brand" href="#inicio" aria-label="TUKI, volver al inicio"><img src="img/marcas/tuki-logo.png" alt="TUKI" /></a>
+      <div class="search-container">
+        <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16.2 16.2 5 5"/></svg>
+        <input id="buscar" type="search" autocomplete="off" aria-label="Buscar productos y servicios" placeholder="¿Qué producto estás buscando?" />
+        <button id="limpiar-busqueda" class="clear-search" aria-label="Limpiar búsqueda" hidden>×</button>
+      </div>
+      <nav class="desktop-nav" aria-label="Menú principal"><a href="#inicio">Inicio</a><a href="#categorias">Categorías</a><a href="#catalogo">Tienda</a><a href="#promociones">Promos</a><a href="#marcas">Marcas</a></nav>
+      <div class="header-actions">
+        <button class="icon-btn heart-toggle" type="button" id="solo-favoritos" title="Ver favoritos" aria-pressed="false" aria-label="Favoritos">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M20.8 4.7a5.5 5.5 0 0 0-7.8 0L12 5.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.5a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        </button>
+        <button class="cart-trigger" type="button" data-open-cart aria-label="Abrir carrito"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 2h3l2.7 13h12.7L22 6H5"/></svg><span class="cart-text">Mi carrito</span><span class="cart-count" id="cart-count">0</span></button>
+        <button class="mobile-toggle" type="button" id="mobile-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil" hidden><a href="#inicio">Inicio</a><a href="#categorias">Categorías</a><a href="#catalogo">Tienda</a><a href="#promociones">Promociones</a><a href="#marcas">Nuestras marcas</a><a href="#contacto">Contacto</a></nav>
+  </header>
+
+  <main>
+    <section class="hero-wrap container" aria-label="Bienvenidos a TUKI">
+      <div class="hero" id="hero">
+        <div class="hero-orb hero-orb-a"></div><div class="hero-orb hero-orb-b"></div>
+        <div class="hero-content">
+          <span class="eyebrow"><span class="eyebrow-star">✦</span> ¡HOLA, FAMILIA TUKI!</span>
+          <h1>Todo para cuidar<br /><em>lo que más quieres.</em></h1>
+          <p>Más que productos, momentos de bienestar. Encuentra lo mejor para tus mascotas, tus prendas y tu hogar.</p>
+          <div class="hero-actions"><a href="#catalogo" class="btn btn-yellow">Explorar productos <span>→</span></a><a href="#nosotros" class="btn btn-light">Conócenos <span>↗</span></a></div>
+          <div class="hero-trust"><span>✓ Atención por WhatsApp</span><span>✓ Compra fácil y rápida</span></div>
+        </div>
+        <div class="hero-visual"><div class="hero-halo"></div><div class="hero-sticker"><strong>🐾</strong><span>Para tus<br />engreídos</span></div><img class="hero-bag" src="img/productos/tuki-arena-25kg.png" alt="Bolsa original TUKI arena para gato de 25 kilogramos" /><div class="hero-bubble">¡25 kg<br /><b>+ pala gratis!*</b></div><div class="deco-sparkle s1">✳</div><div class="deco-sparkle s2">✦</div></div>
+        <div class="hero-bottom">* Promoción sujeta a disponibilidad.</div>
+      </div>
+    </section>
+
+    <section class="benefits container" aria-label="Por qué comprar en TUKI"><div><span class="benefit-icon">📦</span><span><b>Variedad en un lugar</b><small>Productos para la familia</small></span></div><div><span class="benefit-icon">💬</span><span><b>Atención personalizada</b><small>Coordinamos por WhatsApp</small></span></div><div><span class="benefit-icon">💛</span><span><b>Compras con cariño</b><small>Pensado para ti y tu hogar</small></span></div><div><span class="benefit-icon">✨</span><span><b>Siempre novedades</b><small>Descubre lo que viene</small></span></div></section>
+
+    <section class="section container" id="categorias">
+      <div class="section-heading"><div><span class="kicker">ENCUENTRA LO QUE NECESITAS</span><h2>Un mundo para <span>cada momento</span></h2><p>Cuatro espacios para acompañarte en el día a día.</p></div></div>
+      <div class="category-grid">
+        <a class="category-tile cat-pets" href="#catalogo" data-go-category="mascotas"><span class="category-pill">🐾 TU ENGREÍDO</span><h3>Mascotas</h3><p>Arenas, shampoos, pipetas y mucho más.</p><span class="category-link">Explorar <b>↗</b></span><img src="img/productos/tuki-arena-10kg.png" alt="Arena TUKI para mascotas" loading="lazy" /></a>
+        <a class="category-tile cat-laundry" href="#catalogo" data-go-category="lavanderia"><span class="category-pill">🧺 TU ROPA</span><h3>Lavandería</h3><p>Cuidado de prendas, costuras y arreglos.</p><span class="category-link">Ver servicios <b>↗</b></span><img src="img/productos/costura-jean.svg" alt="Servicio de costura" loading="lazy" /></a>
+        <a class="category-tile cat-home" href="#futuro" data-go-category="hogar"><span class="category-pill">🏠 TU HOGAR</span><h3>Hogar &amp; cocina</h3><p>Una nueva línea está tomando forma.</p><span class="category-link">Descubrir <b>↗</b></span><img src="img/productos/aceite-demo.svg" alt="Concepto de aceite para cocina" loading="lazy" /></a>
+        <a class="category-tile cat-beauty" href="#futuro" data-go-category="belleza"><span class="category-pill">✿ TU BIENESTAR</span><h3>Belleza</h3><p>Rituales de cuidado personal que florecen.</p><span class="category-link">Muy pronto <b>↗</b></span><img src="img/productos/nevora-cuidado-demo.jpg" alt="Concepto de productos de cuidado facial" loading="lazy" /><span class="coming-mini">PRÓXIMAMENTE</span></a>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo"><div class="container">
+      <div class="section-heading flex-heading"><div><span class="kicker">ELIGE, AGREGA Y PIDE</span><h2>Descubre la <span>tienda TUKI</span></h2><p>Productos y servicios para ti y quienes más quieres.</p></div><div class="sample-badge">⚠ Precios e imágenes referenciales salvo las dos bolsas TUKI originales.</div></div>
+      <div class="shop-toolbar"><div class="filter-tabs" id="filter-tabs" role="group" aria-label="Filtrar por categoría"><button type="button" class="filter-tab active" data-filter="todos" aria-pressed="true">Todos</button><button type="button" class="filter-tab" data-filter="mascotas" aria-pressed="false">🐾 Mascotas</button><button type="button" class="filter-tab" data-filter="lavanderia" aria-pressed="false">🧺 Lavandería</button><button type="button" class="filter-tab" data-filter="hogar" aria-pressed="false">🏡 Hogar</button><button type="button" class="filter-tab" data-filter="belleza" aria-pressed="false">✿ Belleza</button></div><label class="sort-control">Ordenar por <select id="ordenar" aria-label="Ordenar productos"><option value="recomendados">Recomendados</option><option value="precio-asc">Menor precio</option><option value="precio-desc">Mayor precio</option><option value="nombre">Nombre A-Z</option></select></label></div>
+      <div class="results-line"><span id="contador-resultados" aria-live="polite"></span><button type="button" id="restablecer" class="text-btn" hidden>Limpiar filtros ✕</button></div>
+      <div class="product-grid" id="productos-grid" aria-live="polite"></div>
+      <div id="sin-resultados" class="empty-state" hidden><span>🔎</span><h3>No encontramos coincidencias</h3><p>Prueba con otra búsqueda o explora todo nuestro catálogo.</p><button type="button" class="btn btn-teal" id="vaciar-filtros">Ver todos</button></div>
+      <div class="catalog-note">Este sitio es una demostración. Precios, existencias, tamaños, presentaciones y servicios deberán confirmarse con TUKI antes de cobrar o entregar.</div>
+    </div></section>
+
+    <section class="container" id="promo-pala"><div class="scoop-banner"><div class="scoop-copy"><span class="promo-label">🎁 REGALO ESPECIAL</span><h2>¡Tu arena de 25 kg viene<br /><em>con una sorpresa!</em></h2><p>Por la compra de una bolsa de arena TUKI de 25 kg, <strong>llévate una pala sanitaria gratis.</strong></p><a href="#catalogo" class="btn btn-dark" data-go-category="mascotas">Elegir mi arena <span>→</span></a><small>Regalo sujeto a stock y confirmación. Precios referenciales.</small></div><div class="scoop-images"><img class="scoop-bag" src="img/productos/tuki-arena-25kg.png" alt="Bolsa de 25 kg TUKI" loading="lazy" /><img class="scoop-pala" src="img/productos/pala-tuki.svg" alt="Imagen ilustrativa de una pala sanitaria de regalo" loading="lazy" /></div><span class="scoop-ring"></span></div></section>
+
+    <section class="section container" id="promociones"><div class="section-heading"><div><span class="kicker">OPORTUNIDADES PARA APROVECHAR</span><h2>Promociones que <span>te encantan</span> ✨</h2><p>Especial de fin de mes para nuestros servicios de costura.</p></div><div class="promo-status" id="promo-status">📅 Octubre 2026</div></div>
+      <div class="promo-grid"><article class="promo-card"><span class="promo-n">01</span><div class="promo-icon">👖</div><h3>¡La sexta basta va por nuestra cuenta!</h3><p>Sube <b>5 bastas</b> en pantalones jean y la <b>6.ª es gratis.</b></p><button class="link-action" data-promo="Quiero consultar la promoción de 5 bastas de jean y la sexta gratis">Consultar promoción →</button></article>
+        <article class="promo-card"><span class="promo-n">02</span><div class="promo-icon">🪡</div><h3>¡La sexta costura es gratis!</h3><p>Cambia <b>5 cierres</b> en jeans, shorts o faldas y el <b>6.º es gratis.</b></p><button class="link-action" data-promo="Quiero consultar la promoción de 5 cambios de cierres y el sexto gratis">Consultar promoción →</button></article>
+        <article class="promo-card"><span class="promo-n">03</span><div class="promo-icon">🛏️</div><h3>Una funda de regalo</h3><p>Sube <b>10 bastas a máquina</b> en jean, drill o tela y recibe una funda de algodón de <b>45 × 60 cm.</b></p><button class="link-action" data-promo="Quiero consultar la promoción de 10 bastas con funda de algodón 45 x 60 cm gratis">Consultar promoción →</button></article>
+        <article class="promo-card"><span class="promo-n">04</span><div class="promo-icon">🎀</div><h3>Renueva tus cierres y gana</h3><p>Cambia <b>10 cierres</b> en jean, drill o tela y recibe una funda de algodón de <b>50 × 70 cm.</b></p><button class="link-action" data-promo="Quiero consultar la promoción de 10 cierres con funda de algodón 50 x 70 cm gratis">Consultar promoción →</button></article>
+      </div><div class="promo-foot"><span>🎉 <b>Sorpresas para los 20 primeros clientes</b> que adquieran estas promociones.</span><span>Promociones válidas hasta fin de octubre de 2026 o agotar stock. Sujeto a confirmación.</span></div>
+    </section>
+
+    <section class="section brands-section" id="marcas"><div class="container"><div class="section-heading center"><span class="kicker">NUESTRA FAMILIA CRECE</span><h2>Conoce <span>nuestras marcas</span></h2><p>Distintas formas de cuidar cada rincón de tu vida.</p></div><div class="brands-grid">
+      <article class="brand-card tuki-brand"><span class="brand-overline">LA MARCA QUE NOS UNE</span><img src="img/marcas/tuki-logo.png" alt="TUKI" loading="lazy"/><p>Acompañando a tu familia, a tus mascotas y a tu hogar con soluciones para cada día.</p><a href="#catalogo" class="brand-cta" data-go-category="mascotas">Descubre TUKI ↗</a><span class="brand-decor decor-1"></span><span class="brand-decor decor-2"></span></article>
+      <article class="brand-card nevora-brand"><span class="brand-overline">UNA NUEVA HISTORIA POR FLORECER</span><img src="img/marcas/nevora-logo.svg" alt="NÉVORA Skin" loading="lazy"/><p>NÉVORA, una marca conceptual de belleza enfocada en transformar el cuidado diario en un ritual especial.</p><span class="brand-coming">✦ PRÓXIMAMENTE</span><span class="nevora-flower">✿</span></article>
+    </div></div></section>
+
+    <section class="section container" id="futuro"><div class="future-grid"><div class="future-copy"><span class="kicker">LO BUENO ESTÁ POR VENIR</span><h2>¡Esto recién <span>comienza!</span></h2><p>Estamos imaginando nuevas líneas de productos para hacer tus días más fáciles y especiales.</p><div class="future-features"><span>🌿 Cocina y hogar</span><span>💗 Cuidado de la piel</span><span>🧺 Soluciones del día a día</span></div><button id="aviso-novedades" class="btn btn-teal" type="button">Quiero conocer las novedades ↗</button></div><div class="future-images"><div class="future-image future-a"><img src="img/productos/aceite-demo.svg" alt="Concepto de producto de cocina" loading="lazy"/><span>Hogar y cocina</span></div><div class="future-image future-b"><img src="img/productos/nevora-cuidado-demo.jpg" alt="Concepto de belleza NÉVORA" loading="lazy"/><span>Belleza NÉVORA</span></div><div class="future-ribbon">PRÓXIMAMENTE ✦</div></div></div></section>
+
+    <section class="about-section" id="nosotros"><div class="container about-inner"><div class="about-symbol"><img src="img/marcas/tuki-logo-blanco.png" alt="TUKI" loading="lazy"/><span>Siempre cerca de lo que importa.</span></div><div><span class="kicker kicker-light">QUIÉNES SOMOS</span><h2>TUKI, una marca para <em>compartir la vida.</em></h2><p>Creemos en las cosas que hacen más simple y bonita la rutina: el bienestar de tus mascotas, el cuidado de tus prendas y, próximamente, nuevos productos para tu hogar y tu piel.</p><a href="#contacto" class="btn btn-yellow">Hablemos <span>→</span></a></div></div></section>
+
+    <section class="section container faq-section"><div class="section-heading center"><span class="kicker">ESTAMOS PARA AYUDARTE</span><h2>Preguntas <span>frecuentes</span></h2></div><div class="faq-list"><details><summary>¿Cómo realizo un pedido? <span>＋</span></summary><p>Elige productos en el catálogo, selecciona la presentación, agrégalos al carrito y presiona «Enviar pedido por WhatsApp». Recibiremos el detalle para coordinar contigo.</p></details><details><summary>¿Los precios son definitivos? <span>＋</span></summary><p>No. Este es un proyecto de demostración y todos los precios mostrados son referenciales; los productos, presentaciones y tarifas reales deberán ser validados antes de vender.</p></details><details><summary>¿Cómo funciona el regalo de la pala? <span>＋</span></summary><p>La compra de una bolsa TUKI de arena de 25 kg añade una pala sanitaria gratis al resumen del pedido. La promoción está sujeta a disponibilidad y confirmación.</p></details><details><summary>¿Puedo pedir delivery o recojo? <span>＋</span></summary><p>En el carrito puedes indicar entrega a domicilio o recojo. La dirección, los horarios, la sede, el costo de envío y la disponibilidad se coordinan directamente por WhatsApp.</p></details><details><summary>¿Ya están disponibles los productos NÉVORA? <span>＋</span></summary><p>No. NÉVORA y los productos de cocina aparecen como conceptos de muestra con la indicación «Próximamente» y no pueden comprarse todavía.</p></details></div></section>
+  </main>
+
+  <footer class="footer" id="contacto"><div class="container footer-grid"><div class="footer-brand"><img src="img/marcas/tuki-logo-blanco.png" alt="TUKI"/><p>Pequeños detalles, grandes momentos. Una tienda pensada para acompañarte.</p></div><div><h4>Explorar</h4><a href="#catalogo" data-go-category="mascotas">Mascotas</a><a href="#catalogo" data-go-category="lavanderia">Lavandería</a><a href="#futuro">Hogar y cocina</a><a href="#futuro">Belleza</a></div><div><h4>Información</h4><a href="#nosotros">Nosotros</a><a href="#promociones">Promociones</a><a href="#marcas">Nuestras marcas</a><a href="#contacto">Contáctanos</a></div><div><h4>¿Necesitas ayuda?</h4><p>Estamos a un mensaje de distancia.</p><a class="footer-whatsapp" id="footer-whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/51902058990">💬 WhatsApp: 902 058 990 ↗</a><small>Atención, horarios y entregas por confirmar.</small></div></div><div class="footer-bottom container"><span>© <span id="anio"></span> TUKI. Proyecto web demostrativo.</span><span>Diseñado para una experiencia fácil, cercana y familiar 💛</span></div></footer>
+
+  <a href="https://wa.me/51902058990?text=Hola%2C%20vengo%20de%20la%20web%20de%20TUKI" class="floating-wa" aria-label="Consultar por WhatsApp" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 .5A15.4 15.4 0 0 0 2.8 23.9L.6 31l7.3-2.1A15.5 15.5 0 1 0 16 .5Zm0 28.1c-2.5 0-4.9-.7-7-2l-.5-.3-4.3 1.2 1.3-4.1-.3-.5A12.7 12.7 0 1 1 16 28.6Zm7-9.5c-.4-.2-2.3-1.1-2.7-1.2-.4-.1-.6-.2-.8.2s-1 1.2-1.2 1.4c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.1-.8l.6-.7.4-.6c.1-.2 0-.5-.1-.7-.1-.2-.8-2-1.1-2.8-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2 0 1.9 1.3 3.7 1.5 4 .2.2 2.6 4 6.3 5.5 1 .4 1.8.6 2.5.8 1.1.3 2.1.2 2.9.1.9-.1 2.3-1 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5Z"/></svg></a>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="carrito" role="dialog" aria-modal="true" aria-label="Carrito de compras" aria-hidden="true" tabindex="-1">
+    <div class="drawer-top"><div><span class="kicker">LISTA DE COMPRAS</span><h2>Tu carrito <span>🛒</span></h2></div><button class="close-btn" type="button" data-close-dialog aria-label="Cerrar carrito">✕</button></div>
+    <div class="drawer-content"><div id="cart-items"></div><div id="cart-empty" class="cart-empty"><span>🛍️</span><h3>Tu carrito está esperando</h3><p>Agrega tus productos favoritos para empezar.</p><button class="btn btn-teal" type="button" data-close-dialog>Ir a comprar</button></div>
+      <div id="checkout" hidden><div class="gift-message" id="gift-message" hidden>🎁 <span id="gift-detail"></span></div><div class="subtotal"><span>Subtotal estimado</span><strong id="cart-subtotal">S/ 0.00</strong></div><p class="cost-note">Precios de demostración. Delivery, promociones y total final a confirmar por WhatsApp.</p>
+        <form id="checkout-form" novalidate><h3>Completa tus datos</h3><label>Nombre y apellido <b>*</b><input id="cliente-nombre" maxlength="100" required placeholder="¿A nombre de quién va el pedido?" autocomplete="name"/></label><label>Celular (opcional)<input id="cliente-telefono" inputmode="tel" maxlength="24" placeholder="Tu número de contacto" autocomplete="tel"/></label><label>¿Cómo recibirás tu pedido? <b>*</b><select id="modo-entrega" required><option value="delivery">Envío a domicilio</option><option value="recojo">Recojo coordinado en tienda</option><option value="preparar">Preparar para recojo</option></select></label><div id="direccion-box"><label>Dirección de entrega <b>*</b><textarea id="cliente-direccion" rows="2" placeholder="Calle, número, distrito y referencia"></textarea></label></div><div id="recojo-box" hidden><p class="pickup-hint">El punto de recojo se confirmará contigo por WhatsApp.</p><label>Fecha y hora deseadas para recojo<input id="cliente-hora" type="datetime-local" /></label></div><label>Forma de pago preferida <b>*</b><select id="pago" required><option value="Yape">Yape</option><option value="Plin">Plin</option><option value="Transferencia bancaria">Transferencia bancaria</option><option value="Efectivo">Efectivo</option><option value="Contraentrega (a confirmar)">Contraentrega (a confirmar)</option></select></label><label>Comentarios (opcional)<textarea id="cliente-comentarios" rows="2" maxlength="350" placeholder="Indicaciones, consulta o referencia"></textarea></label><p class="form-error" id="form-error" aria-live="polite" hidden></p><button class="btn btn-whatsapp checkout-button" type="submit">💬 Enviar pedido por WhatsApp <span>↗</span></button><small>Se abrirá WhatsApp con el pedido escrito. El envío del mensaje y la venta se confirman allí.</small></form>
+      </div></div>
+  </aside>
+  <div id="producto-modal" class="product-modal" role="dialog" aria-modal="true" aria-label="Elegir presentación del producto" tabindex="-1" aria-hidden="true"><button class="close-btn modal-close" type="button" data-close-dialog aria-label="Cerrar producto">✕</button><div id="modal-body"></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js?v=1.0.0"></script>
+</body></html>

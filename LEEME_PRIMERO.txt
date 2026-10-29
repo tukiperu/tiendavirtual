@@ -1,0 +1,92 @@
+TUKI — LANDING TIENDA DEMOSTRATIVA
+==================================
+
+El proyecto funciona en GitHub Pages, sin instalar WordPress ni bases de datos.
+
+ESTRUCTURA
+- index.html                  Página principal.
+- css/estilos.css            Colores, fuentes, distribución y animaciones.
+- js/app.js                  Catálogo, carrito, búsqueda, favoritos y WhatsApp.
+- datos/productos.js         Productos, nombres, variantes, precios e imágenes.
+- datos/config.js            Número WhatsApp y fechas de promociones.
+- img/productos/             Imágenes de los productos y conceptos demostrativos.
+- img/marcas/                Logos TUKI y marca conceptual NÉVORA.
+- img/banners/               Imagen de concepto visual (referencia).
+- img/favicon.svg            Ícono del navegador.
+
+CÓMO SUBIR A GITHUB PAGES, SIN ROMPER LAS CARPETAS
+1. Descomprime el ZIP en tu computadora.
+2. Crea un repositorio vacío en GitHub, por ejemplo 'tuki-tienda'.
+3. Usa GitHub Desktop: File > Clone Repository > tu repositorio.
+4. Copia TODO el contenido de la carpeta TUKI_Tienda_Demo a la carpeta del
+   repositorio que GitHub Desktop acaba de clonar. Es importante copiar
+   index.html + css + js + datos + img, juntos y con la misma estructura.
+5. En GitHub Desktop escribe un mensaje de actualización y haz clic en
+   'Commit to main' y después en 'Push origin'.
+6. En GitHub abre Settings > Pages > Build and deployment:
+   Source: Deploy from a branch; Branch: main; Folder: /(root); Save.
+7. Tu web usará la ruta: https://TU-USUARIO.github.io/tuki-tienda/
+
+IMPORTANTE: NO subas el archivo .zip tal cual al repositorio: GitHub Pages
+NO lo descomprime automáticamente. Debes subir los archivos extraídos.
+
+CÓMO MODIFICAR PRECIOS Y PRODUCTOS
+1. Abre datos/productos.js.
+2. Busca el nombre del producto, por ejemplo 'Arena para gato TUKI'.
+3. Cambia los números 'precio:34.90' / 'precio:74.90' por el monto real.
+4. Cada item puede tener 'variantes' de presentación diferentes.
+5. Guarda, actualiza el archivo en GitHub, y recarga la web con Ctrl+F5.
+
+CÓMO CAMBIAR UNA FOTO
+1. Sube el archivo jpg, png, webp o svg a img/productos/.
+2. En datos/productos.js, cambia el valor de imagen:
+   imagen:'img/productos/mi-foto.jpg'
+3. Para fotos distintas por presentación, usa imagen: dentro de cada
+   objeto en variantes. Si no existe, se usa la imagen principal.
+4. Si falta un archivo, saldrá un recuadro 'IMAGEN PENDIENTE' y la web seguirá.
+
+CÓMO CAMBIAR EL WHATSAPP
+En datos/config.js cambia whatsapp:'51902058990' por el número correcto,
+incluyendo el prefijo de Perú 51 sin el signo + ni espacios. Si lo cambias,
+actualiza también los enlaces fijos del footer y el botón flotante en index.html.
+
+PROMOCIONES
+- Arena TUKI con variante de 25 kg: se muestra una pala gratis en el resumen
+  y en el mensaje de pedido a WhatsApp. Entrega sujeta a stock.
+- Las 4 promociones de costura de octubre de 2026 se muestran informativamente;
+  después del 31/10/2026 la web las marca automáticamente como finalizadas.
+  Para cambiar su contenido, edita index.html.
+- Los beneficios de las promos de lavandería NO se calculan como descuento
+  automático: se consultan por WhatsApp para confirmación.
+
+BELLEZA Y HOGAR
+Los productos de prueba están bloqueados con proximamente:true. Para venderlos
+cuando estén listos, define precio real, foto, descripción y cambia a false.
+NÉVORA SKIN es una marca CONCEPTUAL creada para esta maqueta; conviene verificar
+su disponibilidad comercial y registral antes de lanzarla de verdad.
+
+AVISO SOBRE LAS IMÁGENES
+- tuki-arena-10kg-original.jpg y tuki-arena-25kg-original.jpg preservan
+  fotografías reales que proporcionó el cliente. Las versiones .png se
+  recortaron visualmente para integrar el empaque a la web (no se recrearon).
+- Shampoos, pipetas, otras arenas, skincare y aceite son IMÁGENES CONCEPTUALES.
+  NO representan necesariamente los envases de Efectivon, Sanol o Plan Dog.
+- Los precios y nombres de presentaciones son de EJEMPLO: reemplázalos con
+  datos confirmados antes de publicar como tienda real.
+
+EL CARRITO
+- Acumula artículos y mantiene datos del carrito en localStorage.
+- Permite cambiar cantidades, seleccionar variantes, buscar y usar favoritos.
+- Permite delivery, recojo coordinado y preparar para recojo.
+- Ofrece Yape, Plin, transferencia, efectivo o contraentrega como preferencias.
+- No cobra, no procesa transacciones, ni guarda pedidos en una base de datos.
+- Al hacer clic en Enviar pedido, prepara un mensaje para WhatsApp, donde se
+  CONFIRMA manualmente disponibilidad, dirección, tarifa y método de pago.
+
+IMPORTANTE SOBRE LA PRUEBA LOCAL
+Puedes abrir index.html, pero como se usa JavaScript en módulos, algunos
+navegadores bloquean las importaciones cuando se abre con doble clic.
+La manera fiable de probar es publicar en GitHub Pages o usar un servidor
+local (por ejemplo VS Code + Live Server).
+
+Proyecto: demo TUKI / Agencia Blink | Octubre 2026
